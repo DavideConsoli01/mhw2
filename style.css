@@ -1,0 +1,90 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+.choice-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.choice-grid div{
+   
+    height: 32.5%;
+    width: 32.5%;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    background-color: #f4f4f4;
+    border: 1px solid #dcdcdc;
+
+
+    
+}
+
+.choice-grid div img{
+   max-width: 90%;
+   max-height:100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    
+   
+
+}
+
+ .choice-grid img.checkbox{
+    padding-bottom: 10px;
+    margin-top: -10px;
+    
+}
+
+.choice-grid div.selected{
+    background-color: #cfe3ff;
+}
+
+.choice-grid div.unselected{
+    opacity: 0.6;
+}
+
+#risultato{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+#risultato p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+button{
+    background-color: #cecece;
+    font-size: 26px;
+    height: 40px;
+    width: 100%;
+}
+
+button:hover{
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+@media(max-width:700px){
+    article{
+        width: 95%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+    header h1{
+        font-size: 25px;
+    }
+    header div span{
+       background-color: white;
+    }
+}
+
+@media(max-width:500px){
+    .choice-grid div{
+        width: 49%;
+    }
+}
